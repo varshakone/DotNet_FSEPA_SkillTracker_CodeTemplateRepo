@@ -25,19 +25,19 @@ namespace SkillTracker.BusinessLayer.Service
         public string AddNewSkill(Skill skill)
         {
             //MongoDB Logic to save Skill document into database
-            return null;
+          
         }
         // delete skill of full stack engineer from database
         public int DeleteSkill(string skillname)
         {
             //MongoDB Logic to delete Skill document into database
-            return 0;
+           
         }
         // update skill upgarded by full stack engineer from database
         public int EditSkill(Skill skill)
         {
             //MongoDB Logic to update Skill document into database
-            return 0;
+           
         }
     }
 }

@@ -24,31 +24,31 @@ namespace SkillTracker.BusinessLayer.Service
         public  IEnumerable<User> GetAllUsers()
         {
             //MongoDB Logic to retrieve all users from database
-            return null;
+           
         }
         //Search user by it's email
         public User SearchUserByEmail(string Email)
         {
             // MongoDB Logic to search user by email from database
-            return null;
+            
         }
         //Search user by it's first name
         public User SearchUserByFirstName(string firstname)
         {
             // MongoDB Logic to search user by firstname from database
-            return null;
+            
         }
         //Search user by it's mobile number
         public User SearchUserByMobile(long mobilenumber)
         {
             //MongoDB Logic to search user by mobilenumber from database
-            return null;
+           
         }
         //Search user by it's skill range between start value and end value
         public IEnumerable<User> SearchUserBySkillRange(int startvalue)
         {
             // MongoDB Logic to search user by Map Skill from database
-            return null;
+           
         }
     }
 }

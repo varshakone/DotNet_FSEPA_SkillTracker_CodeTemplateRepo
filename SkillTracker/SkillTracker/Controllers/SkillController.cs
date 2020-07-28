@@ -26,9 +26,9 @@ namespace SkillTracker.API.Controllers
         {
           
                 //Business logic to call user servic method which returns success message after creating new skill
-                return null;
+               
 
-            }
+        }
 
         //Rest post api to return 1 after updation of skill
         [Route("api/skill/edit")]
@@ -37,18 +37,19 @@ namespace SkillTracker.API.Controllers
         {
           
                 //Business logic to call skill servic method which returns 1 on successfull updation of skill
-                return null;
+             
 
-            }
+        }
 
         //Rest post api to return 1 after deletion of skill
         [Route("api/skill/delete")]
         [HttpPost]
         public async Task<ActionResult<int>> DestroySkill (String SkillName)
         {
-            //Business logic to call skill servic method which returns 1 on successfull deletion of skill
-                return null;
+          
+                //Business logic to call skill servic method which returns 1 on successfull deletion of skill
+            
 
-            }
+        }
     }
 }

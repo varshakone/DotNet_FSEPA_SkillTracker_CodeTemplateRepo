@@ -25,27 +25,27 @@ namespace SkillTracker.BusinessLayer.Service
         public string CreateNewUser(User user)
         {
             //MongoDB Logic to save user document into database
-            return null;
+          
         }
         //Save new user into database
         public string ValidateUserExist(User user)
         {
             //MongoDB Logic to save user document into database
-            return null;
+         
         }
 
         //delete user details from database
         public int RemoveUser(string firstname, string lastname)
         {
             //MongoDB Logic to delete user document into database
-            return 0;
+           
         }
 
         //update user details into database
         public int UpdateUser(User user)
         {
             //MongoDB Logic to update user document into database
-            return 0;
+           
         }
     }
 }

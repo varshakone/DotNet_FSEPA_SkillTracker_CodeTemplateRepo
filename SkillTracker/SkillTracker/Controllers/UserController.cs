@@ -26,30 +26,29 @@ namespace SkillTracker.API.Controllers
         {
            
                 //Business logic to call user servic method which returns success message after creating new user
-                return null;
+               
 
-            }
+        }
 
         //Rest post api to return 1 after updation of user
         [Route("api/user/edit")]
         [HttpPost]
         public async Task<ActionResult<int>>  ReviseUser(User user)
         {
-         
-                //Business logic to call user servic method which returns 1 on successfull updation of user
-                return null;
+             //Business logic to call user servic method which returns 1 on successfull updation of user
+             
 
-            }
+        }
 
         //Rest post api to return 1 after deletion of user
         [Route("api/user/delete")]
         [HttpPost]
         public async Task< ActionResult<int>> Destroyuser(String firstname, String lastname)
         {
-          
+           
                 //Business logic to call user servic method which returns 1 on successfull deletion of user
-                return null;
+            
 
-            }
+        }
     }
 }
