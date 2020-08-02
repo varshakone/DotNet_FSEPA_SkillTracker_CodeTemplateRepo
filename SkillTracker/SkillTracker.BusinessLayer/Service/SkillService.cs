@@ -1,5 +1,6 @@
 ﻿using MongoDB.Driver;
 using SkillTracker.BusinessLayer.Interface;
+using SkillTracker.BusinessLayer.Service.Repository;
 using SkillTracker.DataLayer;
 using SkillTracker.Entities;
 using System;
@@ -12,32 +13,51 @@ namespace SkillTracker.BusinessLayer.Service
     public class SkillService : ISkillService
     {
 
-        private readonly IMongoDBContext _mongoDBContext;
-        private readonly IMongoCollection<Skill> _mongoCollection;
+        private readonly ISkillRepository _skillRepository;
 
-        public SkillService(IMongoDBContext mongoDBContext)
+        /// <summary>
+        /// Create Object of type IUserRepository
+        /// </summary>
+        /// <param name="userRepository"></param>
+        public SkillService(ISkillRepository skillRepository)
         {
-            _mongoDBContext = mongoDBContext;
-            _mongoCollection = _mongoDBContext.GetCollection<Skill>(typeof(Skill).Name);
+            _skillRepository = skillRepository;
         }
 
-        // Save new skill upgarded by full stack engineer into database
-        public string AddNewSkill(Skill skill)
+        /// <summary>
+        /// Save new skill upgarded by full stack engineer into database
+        /// </summary>
+        /// <param name="skill"></param>
+        /// <returns></returns>
+        
+        public async Task<string> AddNewSkill(Skill skill)
         {
-            //MongoDB Logic to save Skill document into database
-          
+            //Business Logic to call SkillRepository method
+            throw new NotImplementedException();
         }
-        // delete skill of full stack engineer from database
-        public int DeleteSkill(string skillname)
+
+        /// <summary>
+        /// delete skill of full stack engineer from database
+        /// </summary>
+        /// <param name="skillname"></param>
+        /// <returns></returns>
+       public async Task<int> DeleteSkill(string skillname)
         {
-            //MongoDB Logic to delete Skill document into database
-           
+            //Business Logic to call SkillRepository method
+            throw new NotImplementedException();
         }
-        // update skill upgarded by full stack engineer from database
-        public int EditSkill(Skill skill)
+
+
+        /// <summary>
+        /// update skill upgarded by full stack engineer from database
+        /// </summary>
+        /// <param name="skill"></param>
+        /// <returns></returns>
+
+        public async Task<int> EditSkill(Skill skill)
         {
-            //MongoDB Logic to update Skill document into database
-           
+            //Business Logic to call SkillRepository method
+            throw new NotImplementedException();
         }
     }
 }

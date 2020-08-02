@@ -19,36 +19,135 @@ namespace SkillTracker.API.Controllers
             _userService = userService;
         }
 
-        //Rest post api to return success message by creating new user
+        /// <summary>
+        /// Rest post api to return success message by creating new user
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        
         [Route("api/user/new")]
         [HttpPost]
         public async Task< ActionResult<String>> CreateNewUser(User user)
         {
-           
+            
                 //Business logic to call user servic method which returns success message after creating new user
-               
+                throw new NotImplementedException();
 
-        }
+            }
 
-        //Rest post api to return 1 after updation of user
+        /// <summary>
+        /// Rest post api to return 1 after updation of user
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        
         [Route("api/user/edit")]
         [HttpPost]
         public async Task<ActionResult<int>>  ReviseUser(User user)
         {
-             //Business logic to call user servic method which returns 1 on successfull updation of user
-             
+            
+                //Business logic to call user servic method which returns 1 on successfull updation of user
+                throw new NotImplementedException();
 
-        }
+            }
 
-        //Rest post api to return 1 after deletion of user
+        /// <summary>
+        /// Rest post api to return 1 after deletion of user
+        /// </summary>
+        /// <param name="firstname"></param>
+        /// <param name="lastname"></param>
+        /// <returns></returns>
+        
         [Route("api/user/delete")]
         [HttpPost]
         public async Task< ActionResult<int>> Destroyuser(String firstname, String lastname)
         {
-           
-                //Business logic to call user servic method which returns 1 on successfull deletion of user
             
+                //Business logic to call user servic method which returns 1 on successfull deletion of user
+                throw new NotImplementedException();
 
-        }
+            }
+
+        
+
+        /// <summary>
+        /// Rest post api to return list of users
+        /// </summary>
+        /// <returns></returns>
+        
+        [Route("/api/user/alluser")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<User>>> AllUsers()
+        {
+            
+                //Business logic to call admin servic method which returns list of users
+                throw new NotImplementedException();
+
+            }
+
+        /// <summary>
+        /// Rest post api to return  user filtered by first name
+        /// </summary>
+        /// <param name="firstname"></param>
+        /// <returns></returns>
+        
+        [Route("/api/user/byfirstname")]
+        [HttpPost]
+        public async Task<ActionResult<User>> SearchByFirstName(String firstname)
+        {
+            
+                //Business logic to call admin servic method which returns  user filtered by first name
+                throw new NotImplementedException();
+
+            }
+
+        /// <summary>
+        /// Rest post api to return  user filtered by email
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        
+        [Route("/api/user/byemail")]
+        [HttpPost]
+        public async Task<ActionResult<User>> SearchByEmail(String email)
+        {
+           
+                //Business logic to call admin servic method which returns  user filtered by email id
+                throw new NotImplementedException();
+
+            }
+
+        /// <summary>
+        /// Rest post api to return  user filtered by mobile number
+        /// </summary>
+        /// <param name="mobile"></param>
+        /// <returns></returns>
+        
+        [Route("/api/user/bymobile")]
+        [HttpPost]
+        public async Task<ActionResult<User>> SearchByMobileNumber(long mobile)
+        {
+            
+                //Business logic to call admin servic method which returns  user filtered by mobile number
+                throw new NotImplementedException();
+
+            }
+
+        /// <summary>
+        /// Rest post api to return  user filtered by Skill range
+        /// </summary>
+        /// <param name="startvalue"></param>
+        /// <param name="endvalue"></param>
+        /// <returns></returns>
+        
+        [Route("/api/user/byskillrange")]
+        [HttpPost]
+        public async Task<ActionResult<IEnumerable<User>>> SearchBySkillRange(int startvalue,int endvalue)
+        {
+            
+                //Business logic to call admin servic method which returns list of  users filtered by range value
+                throw new NotImplementedException();
+
+            }
     }
 }
